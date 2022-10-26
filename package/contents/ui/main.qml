@@ -43,13 +43,13 @@ Item {
     function getBatteryDirectoryPaths() {
         var batteryObjects = []
         for(var i=0; i<4; i++) {
-            var path = "/sys/class/power_supply/BAT" + i + "/present";
+            var path = "/sys/class/power_supply/CMB" + i + "/present";
             var req = new XMLHttpRequest();
             req.open("GET", path, false);
             req.send(null)
 
             if(req.responseText == "1\n") {
-                var directoryUrl =  "/sys/class/power_supply/BAT" + i;
+                var directoryUrl =  "/sys/class/power_supply/CMB" + i;
 
                 var battery = {
                     directoryUrl: directoryUrl,
@@ -63,7 +63,7 @@ Item {
         return batteryObjects
     }
 
-    //this function checks if the "/sys/class/power_supply/BAT[i]/power_now" file exists
+    //this function checks if the "/sys/class/power_supply/CMB[i]/power_now" file exists
     function checkPowerNowFileExists(batteryDirectoryUrl) {
 
         var path = batteryDirectoryUrl + "/power_now"
