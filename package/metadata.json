@@ -1,22 +1,26 @@
 {
-    "KPlugin": {
-        "Authors": [
-            {
-                "Email": "leoatul12@gmail.com",
-                "Name": "Atul Gopinathan"
-            }
-        ],
-        "Category": "System Information",
-        "Description": "Displays Real Time Battery Power Consumption in Watts",
-        "Icon": "battery",
-        "Id": "org.kde.powerMonitor",
-        "Name": "Power Monitor",
-        "ServiceTypes": [
-            "Plasma/Applet"
-        ],
-        "Version": "0.2",
-        "Website": "https://github.com/atul-g/battery-power-monitor"
-    },
-    "X-Plasma-API": "declarativeappletscript",
-    "X-Plasma-MainScript": "ui/main.qml"
+  "KPlugin": {
+    "Authors": [
+      {
+        "Email": "leoatul12@gmail.com",
+        "Name": "Atul Gopinathan"
+      },
+      {
+        "Email": "matipolit@gmail.com",
+        "Name": "Mateusz Polito"
+      }
+    ],
+    "Category": "System Information",
+    "Description": "Displays Real Time Battery Power Consumption in Watts",
+    "Icon": "battery",
+    "Id": "org.kde.powerMonitorMP",
+    "Name": "Power Monitor MP",
+    "ServiceTypes": [
+      "Plasma/Applet"
+    ],
+    "Version": "0.2",
+    "Website": "https://github.com/Matipolit/plasma-power-monitor-mp"
+  },
+  "X-Plasma-API": "declarativeappletscript",
+  "X-Plasma-MainScript": "ui/main.qml"
 }
